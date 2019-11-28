@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06F39338238F5CC400913605 /* ExpandableViewiOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableViewiOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F39338238F5CC400913605 /* ExpandableViewiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableViewiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F3933B238F5CC400913605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06F3933D238F5CC400913605 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		06F39342238F5CC400913605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		06F3932F238F5CC400913605 = {
 			isa = PBXGroup;
 			children = (
-				06F3933A238F5CC400913605 /* ExpandableViewiOs */,
+				06F3933A238F5CC400913605 /* ExpandableViewiOS */,
 				06F39339238F5CC400913605 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		06F39339238F5CC400913605 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06F39338238F5CC400913605 /* ExpandableViewiOs.app */,
+				06F39338238F5CC400913605 /* ExpandableViewiOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06F3933A238F5CC400913605 /* ExpandableViewiOs */ = {
+		06F3933A238F5CC400913605 /* ExpandableViewiOS */ = {
 			isa = PBXGroup;
 			children = (
 				06F3933B238F5CC400913605 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				06F39346238F5CC600913605 /* LaunchScreen.storyboard */,
 				06F39349238F5CC600913605 /* Info.plist */,
 			);
-			path = ExpandableViewiOs;
+			path = ExpandableViewiOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		06F39337238F5CC400913605 /* ExpandableViewiOs */ = {
+		06F39337238F5CC400913605 /* ExpandableViewiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06F3934C238F5CC600913605 /* Build configuration list for PBXNativeTarget "ExpandableViewiOs" */;
+			buildConfigurationList = 06F3934C238F5CC600913605 /* Build configuration list for PBXNativeTarget "ExpandableViewiOS" */;
 			buildPhases = (
 				06F39334238F5CC400913605 /* Sources */,
 				06F39335238F5CC400913605 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = ExpandableViewiOs;
+			name = ExpandableViewiOS;
 			productName = ExpandableViewiOs;
-			productReference = 06F39338238F5CC400913605 /* ExpandableViewiOs.app */;
+			productReference = 06F39338238F5CC400913605 /* ExpandableViewiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 06F39333238F5CC400913605 /* Build configuration list for PBXProject "ExpandableViewiOs" */;
+			buildConfigurationList = 06F39333238F5CC400913605 /* Build configuration list for PBXProject "ExpandableViewiOS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06F39337238F5CC400913605 /* ExpandableViewiOs */,
+				06F39337238F5CC400913605 /* ExpandableViewiOS */,
 			);
 		};
 /* End PBXProject section */
@@ -319,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06F39333238F5CC400913605 /* Build configuration list for PBXProject "ExpandableViewiOs" */ = {
+		06F39333238F5CC400913605 /* Build configuration list for PBXProject "ExpandableViewiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06F3934A238F5CC600913605 /* Debug */,
@@ -328,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06F3934C238F5CC600913605 /* Build configuration list for PBXNativeTarget "ExpandableViewiOs" */ = {
+		06F3934C238F5CC600913605 /* Build configuration list for PBXNativeTarget "ExpandableViewiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06F3934D238F5CC600913605 /* Debug */,

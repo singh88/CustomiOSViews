@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var firstView: UIView!
     @IBOutlet var secondView: UIView!
     @IBOutlet var mainHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var showMoreButton: UIButton!
+    @IBOutlet var showMoreButton: UIButton!
 
     private var shouldCollapse = false
 
@@ -23,8 +23,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        animateView(isCollapse: false, buttonText: buttonTitle, heighConstraint: 0)
     }
 
     @IBAction func buttonTap(_ sender: Any) {
