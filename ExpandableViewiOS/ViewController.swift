@@ -1,6 +1,5 @@
 //
 //  ViewController.swift
-//  GetStrong
 //
 //  Created by Manish Singh on 11/20/19.
 //  Copyright © 2019 ManishSingh. All rights reserved.
