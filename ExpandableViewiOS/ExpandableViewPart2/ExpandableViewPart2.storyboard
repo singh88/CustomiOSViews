@@ -52,7 +52,7 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="1uQ-Cn-hZI" secondAttribute="trailing" constant="10" id="5pK-dK-Ktg"/>
                                             <constraint firstItem="1uQ-Cn-hZI" firstAttribute="leading" secondItem="rsl-ak-hxH" secondAttribute="leading" constant="10" id="MvE-jO-MnG"/>
-                                            <constraint firstAttribute="bottom" secondItem="1uQ-Cn-hZI" secondAttribute="bottom" priority="750" id="dgk-MF-EXU"/>
+                                            <constraint firstAttribute="bottom" secondItem="1uQ-Cn-hZI" secondAttribute="bottom" id="dgk-MF-EXU"/>
                                             <constraint firstItem="1uQ-Cn-hZI" firstAttribute="top" secondItem="rsl-ak-hxH" secondAttribute="top" constant="10" id="goV-TD-g1h"/>
                                         </constraints>
                                     </view>
