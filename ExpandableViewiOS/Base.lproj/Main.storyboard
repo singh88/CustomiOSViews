@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DgR-db-Y91">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -7,10 +7,55 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
+        <scene sceneID="GKx-40-ghw">
+            <objects>
+                <viewController storyboardIdentifier="mainViewController" id="BHB-1L-7X1" customClass="MainViewController" customModule="ExpandableViewiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ecs-Vr-C11">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gKl-Jo-oqa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmt-Ei-RW0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <state key="normal" title="ShowExpandableViewPart1"/>
+                                        <connections>
+                                            <action selector="showExpandableViewPart1Tapped:" destination="BHB-1L-7X1" eventType="touchUpInside" id="FZ5-Zd-tom"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgc-kS-PBE">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                                        <state key="normal" title="ShowExpandableViewPart2"/>
+                                        <connections>
+                                            <action selector="showExpandableViewPart2Tapped:" destination="BHB-1L-7X1" eventType="touchUpInside" id="9Pj-ME-E3c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fDl-wB-oz0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gKl-Jo-oqa" firstAttribute="leading" secondItem="4nk-xI-MND" secondAttribute="leading" id="3sc-BM-FCZ"/>
+                            <constraint firstItem="4nk-xI-MND" firstAttribute="trailing" secondItem="gKl-Jo-oqa" secondAttribute="trailing" id="EbW-g6-RX1"/>
+                            <constraint firstItem="4nk-xI-MND" firstAttribute="bottom" secondItem="gKl-Jo-oqa" secondAttribute="bottom" constant="674" id="mC6-e4-2px"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4nk-xI-MND"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mh0-ev-Xub"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6E-S0-UrK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="366"/>
+        </scene>
+        <!--Expandable View Part1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExpandableViewiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="expandableViewPart1" id="BYZ-38-t0r" customClass="ExpandableViewPart1" customModule="ExpandableViewiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,6 +135,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="owF-mO-mPl"/>
                     <connections>
                         <outlet property="firstView" destination="hab-sn-tSp" id="DcD-L8-0D2"/>
                         <outlet property="mainHeightConstraint" destination="TFG-mu-c68" id="GxI-9Q-cBq"/>
@@ -98,6 +144,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1948" y="7"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kpH-BA-Bmu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DgR-db-Y91" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZpB-WH-61N">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BHB-1L-7X1" kind="relationship" relationship="rootViewController" id="fQM-vr-Oh8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ffo-OO-RwF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
         </scene>

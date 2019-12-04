@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ExpandableViewPart1.swift
 //
 //  Created by Manish Singh on 11/20/19.
 //  Copyright © 2019 ManishSingh. All rights reserved.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ExpandableViewPart1: UIViewController {
 
     @IBOutlet var firstView: UIView!
     @IBOutlet var secondView: UIView!
