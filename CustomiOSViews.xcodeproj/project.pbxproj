@@ -37,7 +37,7 @@
 		061BB9D32533EB7A00B6EA1A /* ModalPresentableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentableVC.swift; sourceTree = "<group>"; };
 		063CED21252D4EDC00F493EF /* BottomSheetParentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetParentViewController.xib; sourceTree = "<group>"; };
 		063CED23252D54E900F493EF /* BottomSheetParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetParentViewController.swift; sourceTree = "<group>"; };
-		06F39338238F5CC400913605 /* ExpandableViewiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableViewiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F39338238F5CC400913605 /* CustomiOSViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomiOSViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F3933B238F5CC400913605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06F39344238F5CC600913605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F39347238F5CC600913605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		06F3932F238F5CC400913605 = {
 			isa = PBXGroup;
 			children = (
-				06F3933A238F5CC400913605 /* ExpandableViewiOS */,
+				06F3933A238F5CC400913605 /* CustomiOSViews */,
 				06F39339238F5CC400913605 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,12 +114,12 @@
 		06F39339238F5CC400913605 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06F39338238F5CC400913605 /* ExpandableViewiOS.app */,
+				06F39338238F5CC400913605 /* CustomiOSViews.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06F3933A238F5CC400913605 /* ExpandableViewiOS */ = {
+		06F3933A238F5CC400913605 /* CustomiOSViews */ = {
 			isa = PBXGroup;
 			children = (
 				063CED25252D569E00F493EF /* AppDelegate */,
@@ -131,15 +131,15 @@
 				06F39346238F5CC600913605 /* LaunchScreen.storyboard */,
 				06F39349238F5CC600913605 /* Info.plist */,
 			);
-			path = ExpandableViewiOS;
+			path = CustomiOSViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		06F39337238F5CC400913605 /* ExpandableViewiOS */ = {
+		06F39337238F5CC400913605 /* CustomiOSViews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06F3934C238F5CC600913605 /* Build configuration list for PBXNativeTarget "ExpandableViewiOS" */;
+			buildConfigurationList = 06F3934C238F5CC600913605 /* Build configuration list for PBXNativeTarget "CustomiOSViews" */;
 			buildPhases = (
 				06F39334238F5CC400913605 /* Sources */,
 				06F39335238F5CC400913605 /* Frameworks */,
@@ -149,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = ExpandableViewiOS;
+			name = CustomiOSViews;
 			productName = ExpandableViewiOs;
-			productReference = 06F39338238F5CC400913605 /* ExpandableViewiOS.app */;
+			productReference = 06F39338238F5CC400913605 /* CustomiOSViews.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 06F39333238F5CC400913605 /* Build configuration list for PBXProject "ExpandableViewiOS" */;
+			buildConfigurationList = 06F39333238F5CC400913605 /* Build configuration list for PBXProject "CustomiOSViews" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -182,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06F39337238F5CC400913605 /* ExpandableViewiOS */,
+				06F39337238F5CC400913605 /* CustomiOSViews */,
 			);
 		};
 /* End PBXProject section */
@@ -354,13 +354,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2G62PZ94A;
-				INFOPLIST_FILE = ExpandableViewiOs/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CustomiOSViews/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.manish.ExpandableViewiOs;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manish.CustomiOSViews;
+				PRODUCT_NAME = CustomiOSViews;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,13 +372,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2G62PZ94A;
-				INFOPLIST_FILE = ExpandableViewiOs/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CustomiOSViews/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.manish.ExpandableViewiOs;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.manish.CustomiOSViews;
+				PRODUCT_NAME = CustomiOSViews;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06F39333238F5CC400913605 /* Build configuration list for PBXProject "ExpandableViewiOS" */ = {
+		06F39333238F5CC400913605 /* Build configuration list for PBXProject "CustomiOSViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06F3934A238F5CC600913605 /* Debug */,
@@ -396,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06F3934C238F5CC600913605 /* Build configuration list for PBXNativeTarget "ExpandableViewiOS" */ = {
+		06F3934C238F5CC600913605 /* Build configuration list for PBXNativeTarget "CustomiOSViews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06F3934D238F5CC600913605 /* Debug */,

@@ -53,7 +53,9 @@ class BottomSheetParentViewController: UIViewController {
 
         // fixed, other solution could be to determine the minimum fitting size.
         let mainHeight: CGFloat = 300
-        let mainWidth = min(width, 400)
+        let mainWidth: CGFloat
+
+        mainWidth = UIDevice.current.userInterfaceIdiom == .pad ? 400 : width
 
         let yPosition = onParentViewController.view.frame.height-mainHeight
         let xPosition = onParentViewController.view.frame.midX-mainWidth/2
