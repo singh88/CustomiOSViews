@@ -15,6 +15,10 @@
 		0601BDE82398637C00442493 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0601BDE52398637C00442493 /* MainViewController.swift */; };
 		0601BDE92398637C00442493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0601BDE62398637C00442493 /* Main.storyboard */; };
 		0601BDEA2398637C00442493 /* ExpandableViewPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0601BDE72398637C00442493 /* ExpandableViewPart1.swift */; };
+		061BB9D22533EB4900B6EA1A /* CustomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BB9D12533EB4900B6EA1A /* CustomTransition.swift */; };
+		061BB9D42533EB7A00B6EA1A /* ModalPresentableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061BB9D32533EB7A00B6EA1A /* ModalPresentableVC.swift */; };
+		063CED22252D4EDC00F493EF /* BottomSheetParentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063CED21252D4EDC00F493EF /* BottomSheetParentViewController.xib */; };
+		063CED24252D54E900F493EF /* BottomSheetParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063CED23252D54E900F493EF /* BottomSheetParentViewController.swift */; };
 		06F3933C238F5CC400913605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F3933B238F5CC400913605 /* AppDelegate.swift */; };
 		06F39345238F5CC600913605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F39344238F5CC600913605 /* Assets.xcassets */; };
 		06F39348238F5CC600913605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F39346238F5CC600913605 /* LaunchScreen.storyboard */; };
@@ -29,6 +33,10 @@
 		0601BDE52398637C00442493 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0601BDE62398637C00442493 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0601BDE72398637C00442493 /* ExpandableViewPart1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableViewPart1.swift; sourceTree = "<group>"; };
+		061BB9D12533EB4900B6EA1A /* CustomTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransition.swift; sourceTree = "<group>"; };
+		061BB9D32533EB7A00B6EA1A /* ModalPresentableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPresentableVC.swift; sourceTree = "<group>"; };
+		063CED21252D4EDC00F493EF /* BottomSheetParentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetParentViewController.xib; sourceTree = "<group>"; };
+		063CED23252D54E900F493EF /* BottomSheetParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetParentViewController.swift; sourceTree = "<group>"; };
 		06F39338238F5CC400913605 /* ExpandableViewiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandableViewiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F3933B238F5CC400913605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06F39344238F5CC600913605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,11 +77,30 @@
 		0601BDE42398637C00442493 /* ExpandableViewPart1 */ = {
 			isa = PBXGroup;
 			children = (
-				0601BDE52398637C00442493 /* MainViewController.swift */,
-				0601BDE62398637C00442493 /* Main.storyboard */,
 				0601BDE72398637C00442493 /* ExpandableViewPart1.swift */,
 			);
 			path = ExpandableViewPart1;
+			sourceTree = "<group>";
+		};
+		063CED20252D4E6700F493EF /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				063CED21252D4EDC00F493EF /* BottomSheetParentViewController.xib */,
+				063CED23252D54E900F493EF /* BottomSheetParentViewController.swift */,
+				061BB9D12533EB4900B6EA1A /* CustomTransition.swift */,
+				061BB9D32533EB7A00B6EA1A /* ModalPresentableVC.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		063CED25252D569E00F493EF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				06F3933B238F5CC400913605 /* AppDelegate.swift */,
+				0601BDE52398637C00442493 /* MainViewController.swift */,
+				0601BDE62398637C00442493 /* Main.storyboard */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		06F3932F238F5CC400913605 = {
@@ -95,10 +122,11 @@
 		06F3933A238F5CC400913605 /* ExpandableViewiOS */ = {
 			isa = PBXGroup;
 			children = (
+				063CED25252D569E00F493EF /* AppDelegate */,
 				0601BDE12398568900442493 /* Coordinator */,
-				06F3933B238F5CC400913605 /* AppDelegate.swift */,
 				0601BDE42398637C00442493 /* ExpandableViewPart1 */,
 				0601BDDF2398564B00442493 /* ExpandableViewPart2 */,
+				063CED20252D4E6700F493EF /* BottomSheet */,
 				06F39344238F5CC600913605 /* Assets.xcassets */,
 				06F39346238F5CC600913605 /* LaunchScreen.storyboard */,
 				06F39349238F5CC600913605 /* Info.plist */,
@@ -169,6 +197,7 @@
 				06F39345238F5CC600913605 /* Assets.xcassets in Resources */,
 				0601BDE92398637C00442493 /* Main.storyboard in Resources */,
 				0601BDDB2398552700442493 /* ExpandableView.xib in Resources */,
+				063CED22252D4EDC00F493EF /* BottomSheetParentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,11 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0601BDE82398637C00442493 /* MainViewController.swift in Sources */,
+				063CED24252D54E900F493EF /* BottomSheetParentViewController.swift in Sources */,
 				06F3933C238F5CC400913605 /* AppDelegate.swift in Sources */,
+				061BB9D42533EB7A00B6EA1A /* ModalPresentableVC.swift in Sources */,
 				0601BDEA2398637C00442493 /* ExpandableViewPart1.swift in Sources */,
 				0601BDDC2398552700442493 /* ExpandableViewPart2.swift in Sources */,
 				0601BDDA2398552700442493 /* ExpandableView.swift in Sources */,
 				0601BDE32398569B00442493 /* AppCoordinator.swift in Sources */,
+				061BB9D22533EB4900B6EA1A /* CustomTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DgR-db-Y91">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DgR-db-Y91">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,20 +16,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gKl-Jo-oqa">
-                                <rect key="frame" x="0.0" y="88" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="425" width="414" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmt-Ei-RW0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="33.5"/>
                                         <state key="normal" title="ShowExpandableViewPart1"/>
                                         <connections>
                                             <action selector="showExpandableViewPart1Tapped:" destination="BHB-1L-7X1" eventType="touchUpInside" id="FZ5-Zd-tom"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgc-kS-PBE">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="33.5" width="414" height="33"/>
                                         <state key="normal" title="ShowExpandableViewPart2"/>
                                         <connections>
                                             <action selector="showExpandableViewPart2Tapped:" destination="BHB-1L-7X1" eventType="touchUpInside" id="9Pj-ME-E3c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tw-OP-Sgh" userLabel="Bottom Sheet">
+                                        <rect key="frame" x="0.0" y="66.5" width="414" height="33.5"/>
+                                        <state key="normal" title="Bottom Sheet"/>
+                                        <connections>
+                                            <action selector="openBottomSheet:" destination="BHB-1L-7X1" eventType="touchUpInside" id="CVM-zt-NjZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -41,8 +48,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="gKl-Jo-oqa" firstAttribute="leading" secondItem="4nk-xI-MND" secondAttribute="leading" id="3sc-BM-FCZ"/>
+                            <constraint firstItem="gKl-Jo-oqa" firstAttribute="centerY" secondItem="4nk-xI-MND" secondAttribute="centerY" id="5Ys-6X-9L7"/>
                             <constraint firstItem="4nk-xI-MND" firstAttribute="trailing" secondItem="gKl-Jo-oqa" secondAttribute="trailing" id="EbW-g6-RX1"/>
-                            <constraint firstItem="4nk-xI-MND" firstAttribute="bottom" secondItem="gKl-Jo-oqa" secondAttribute="bottom" constant="674" id="mC6-e4-2px"/>
+                            <constraint firstItem="gKl-Jo-oqa" firstAttribute="centerX" secondItem="4nk-xI-MND" secondAttribute="centerX" id="zht-Kw-8cm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4nk-xI-MND"/>
                     </view>

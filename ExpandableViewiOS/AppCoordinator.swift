@@ -39,4 +39,9 @@ class AppCoordinator {
 
         navigationController.pushViewController(expandableViewPart2, animated: true)
     }
+
+    func showBottomSheetVC() {
+         let bottomSheetVC = BottomSheetParentViewController()
+         navigationController.pushViewController(bottomSheetVC, animated: true)
+    }
 }

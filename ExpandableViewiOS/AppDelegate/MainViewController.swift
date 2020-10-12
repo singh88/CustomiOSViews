@@ -23,4 +23,8 @@ class MainViewController: UIViewController {
     @IBAction func showExpandableViewPart2Tapped(_ sender: Any) {
         coordinator?.showExpandableViewPart2()
     }
+
+    @IBAction func openBottomSheet(_ sender: Any) {
+        coordinator?.showBottomSheetVC()
+    }
 }
