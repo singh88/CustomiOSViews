@@ -19,7 +19,7 @@ class BottomSheetParentViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func showBottomSheet(_ sender: UIButton) {
+    @IBAction func showByAddingBottomSheetVCViews(_ sender: UIButton) {
         let bottomSheetVC = children.first { $0 is BottomSheetVC }
 
         if bottomSheetVC == nil {
@@ -27,7 +27,7 @@ class BottomSheetParentViewController: UIViewController {
         }
     }
 
-    @IBAction func presentVCModaly(_ sender: UIButton) {
+    @IBAction func showUsingPresentationController(_ sender: UIButton) {
         let bc = ModalPresentableVC()
         bc.modalPresentationStyle = .custom
         bc.transitioningDelegate = transitionDelegate

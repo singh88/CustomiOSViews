@@ -37,7 +37,7 @@
                                                         <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="showBottomSheet:" destination="-1" eventType="touchUpInside" id="DaA-zC-bHt"/>
+                                                        <action selector="showByAddingBottomSheetVCViews:" destination="-1" eventType="touchUpInside" id="DaA-zC-bHt"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hic-KW-DqG" userLabel="Modal Style">
@@ -48,7 +48,7 @@
                                                         <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="presentVCModaly:" destination="-1" eventType="touchUpInside" id="l1i-td-6HF"/>
+                                                        <action selector="showUsingPresentationController:" destination="-1" eventType="touchUpInside" id="l1i-td-6HF"/>
                                                     </connections>
                                                 </button>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RCk-xl-FKm">
