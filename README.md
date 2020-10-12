@@ -12,7 +12,8 @@ In this repository, I am trying to build some of the common UI components that I
 
 # WIP
 - Custom Presentation style <WIP>
--
+<img width="250" alt="Screen Shot 2020-10-12 at 4 47 13 PM" src="https://user-images.githubusercontent.com/5465858/95799789-9c3ab980-0caa-11eb-9f65-7f1374af11fd.png">
+
 
 
 
