@@ -36,32 +36,31 @@ class BottomSheetParentViewController: UIViewController {
 
     func showBottomSheetViewController(_ onParentViewController: UIViewController) {
         let bottomSheetVC = BottomSheetVC()
-        
+
+        let mainViewFrame = onParentViewController.view.frame
         onParentViewController.addChild(bottomSheetVC)
         onParentViewController.view.addSubview(bottomSheetVC.view)
-        bottomSheetVC.didMove(toParent: onParentViewController)
 
-        let width  = onParentViewController.view.frame.width
+        let width  = mainViewFrame.width
 
-        let fittingSize = CGSize(width: width, height: UIView.layoutFittingCompressedSize.height)
-
-        let targetHeight = onParentViewController.view.systemLayoutSizeFitting(
-            fittingSize,
-            withHorizontalFittingPriority: .required,
-            verticalFittingPriority: .defaultLow
-        ).height
-
-        // fixed, other solution could be to determine the minimum fitting size.
         let mainHeight: CGFloat = 300
         let mainWidth: CGFloat
 
         mainWidth = UIDevice.current.userInterfaceIdiom == .pad ? 400 : width
 
-        let yPosition = onParentViewController.view.frame.height-mainHeight
-        let xPosition = onParentViewController.view.frame.midX-mainWidth/2
+        let yFinalPosition = mainViewFrame.height-mainHeight
+        let xFinalPosition = mainViewFrame.midX-mainWidth/2
 
-        bottomSheetVC.view.frame = CGRect(x: xPosition, y: yPosition,
+        let originalXPosition = mainViewFrame.midX - mainWidth/2
+        let originalYPosition = mainViewFrame.maxY
+
+        bottomSheetVC.view.frame = CGRect(x: originalXPosition, y: originalYPosition,
         width: mainWidth, height: mainHeight)
+
+        UIView.animate(withDuration: 0.3, animations: {
+            bottomSheetVC.view.frame = CGRect(x: xFinalPosition, y: yFinalPosition,
+            width: mainWidth, height: mainHeight)
+        }, completion: nil)
     }
 }
 
@@ -93,7 +92,6 @@ class BottomSheetVC: UIViewController {
         let contentView = UIView()
         contentView.backgroundColor = .yellow
         contentView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.accessibilityIdentifier = "Content View"
 
         view.addSubview(contentView)
 

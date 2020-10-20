@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetParentViewController" customModule="ExpandableViewiOS" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetParentViewController" customModule="CustomiOSViews" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="iN0-l3-epB" id="0CK-Kj-Bna"/>
             </connections>
@@ -72,45 +72,7 @@
                                         <constraint firstItem="zNm-Lj-mTU" firstAttribute="top" secondItem="Nwi-e8-jiL" secondAttribute="top" id="I2f-Jo-8o6"/>
                                     </constraints>
                                 </view>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mal-qU-Nef">
-                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
-                                    <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="200" id="1ca-AH-umR"/>
-                                    </constraints>
-                                </view>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88q-L4-Y4y">
-                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
-                                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="200" id="G5s-7i-riQ"/>
-                                    </constraints>
-                                </view>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tV9-GQ-1aS">
-                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
-                                    <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="200" id="Mnj-Qc-7ar"/>
-                                    </constraints>
-                                </view>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mu6-7q-l4a">
-                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
-                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="200" id="hUs-bB-Vku"/>
-                                    </constraints>
-                                </view>
-                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FtI-g5-wZe">
-                                    <rect key="frame" x="0.0" y="0.0" width="380" height="200"/>
-                                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="200" id="axC-Ic-edx"/>
-                                    </constraints>
-                                </view>
                             </subviews>
-                            <constraints>
-                                <constraint firstAttribute="height" priority="750" id="Tpb-9E-kmx"/>
-                            </constraints>
                         </stackView>
                     </subviews>
                     <constraints>
@@ -149,8 +111,8 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <variation key="heightClass=regular-widthClass=regular">
                 <mask key="constraints">
-                    <exclude reference="E1T-ep-Io4"/>
                     <exclude reference="sHZ-0U-h97"/>
+                    <exclude reference="E1T-ep-Io4"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="137.41007194244605" y="109.54773869346734"/>
